@@ -1,0 +1,32 @@
+%\documentclass[twocolumn]{article}
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{multicol}
+\begin{document}
+	\setlength{\columnsep}{20pt}
+	\setlength{\columnseprule}{1pt}
+	\begin{multicols}{3}
+		\lipsum[1-14]
+	\end{multicols}
+
+	\begin{multicols}{3}
+		Row, row, row your boat,
+		Gently down the stream.
+		If you see a crocodile,
+		Don't forget to scream.
+		
+		\columnbreak
+		Jack and Jill
+		Went up the hill
+		To fetch a pail of water
+		Jack fell down
+		And broke his crown,
+		And Jill came tumbling after
+		
+		\columnbreak
+		"Why does the lamb love Mary so?
+		Love Mary so? Love Mary so?
+		Why does the lamb love Mary so?"
+		The eager children cried.
+	\end{multicols}
+\end{document}
