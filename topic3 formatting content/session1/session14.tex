@@ -1,0 +1,38 @@
+%Align your text(left,right,center)
+%Alignment default;justify,left Align \begin{flushleft}
+%    
+%\end{flushleft}
+% use package ragged2e
+\documentclass{article}
+\usepackage{ragged2e}
+\usepackage{lipsum}
+\begin{document}
+	\section{one}
+	\begin{flushleft}
+		\lipsum[2-2]
+	\end{flushleft}
+	
+	\section{two}
+	\begin{center}
+		\lipsum[2-2]
+	\end{center}
+	
+	\section{three}
+	\begin{flushright}
+		\lipsum[2-2]
+	\end{flushright}
+
+	\pagebreak
+
+	\centering
+	\lipsum[1-1]
+	
+	\flushleft
+	\lipsum[2-2]
+	
+	\flushright
+	\lipsum[3-3]
+	
+	\justify
+	\lipsum[4-4]
+\end{document}

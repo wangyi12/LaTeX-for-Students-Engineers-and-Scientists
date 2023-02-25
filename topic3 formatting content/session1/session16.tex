@@ -1,0 +1,41 @@
+%Bullets and Numbering Nest enumerate item 
+%Nesting lists more than 4 levels will occor error
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\begin{document}
+	\renewcommand{\labelitemi}{$\diamond$}
+	\renewcommand{\labelitemii}{$\blacksquare$}
+	\section{Standard Colors}
+	\begin{itemize}
+		\item red
+		\begin{itemize}
+			\item Brick red
+			\item Post office red
+			\item Blood red
+		\end{itemize}
+		\item blue
+		\begin{enumerate}[i.]
+			\item Sky blue
+			\item Firuza
+		\end{enumerate}
+		\item green
+		\item yellow
+		\item black
+	\end{itemize}
+	
+	\section{More Colors}
+	\begin{enumerate}
+		\item Maroon
+		\item Cyan
+		\item Brown
+		\item Plum
+	\end{enumerate}
+	
+	\section{Description List}
+	\begin{description}
+		\item[Input Devices:] Keyboard, mouse
+		\item[Output Devices] Printer, monitor
+	\end{description}
+	
+\end{document}
