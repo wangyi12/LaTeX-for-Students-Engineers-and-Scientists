@@ -1,0 +1,51 @@
+% table environment
+% Add captions
+% Position the table
+% t: top
+% b: bottom
+% h: approximately here
+% need complied two times if we use commond \listoftables and \tableofcontents %
+\documentclass{article}
+\usepackage{lipsum}
+\begin{document}
+    \tableofcontents
+    \listoftables
+	
+    \section{one}
+    \lipsum[1-2]
+
+    \begin{table}[b]
+        \centering
+        \begin{tabular}{|l|l|}
+	        \hline
+	        No. & Item\\
+	        \hline
+	        1 & Pen\\
+	        \hline
+	        2 & Pencil\\
+	        \hline
+	        3 & Scale\\
+	        \hline
+        \end{tabular}
+        \caption{Stationery Items}
+    \end{table}
+
+    \section{two}
+    \lipsum[1-3]
+    
+    \begin{table}[h]
+    	\centering
+    	\begin{tabular}{|l|l|}
+    		\hline
+    		No. & Item\\
+    		\hline
+    		1 & Pen\\
+    		\hline
+    		2 & Pencil\\
+    		\hline
+    		3 & Scale\\
+    		\hline
+    	\end{tabular}
+    	\caption{More Items}
+    \end{table}
+\end{document}

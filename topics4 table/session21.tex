@@ -1,0 +1,45 @@
+%Vertical: |
+% Horizontal: \hline
+% Specific: \cline{i-j}
+% error we shou write same number of "clr" with same column  number 
+% Package: arydshln
+% Vertical: :
+% Horizontal: \hdashline[size of dash / space between dashes]
+% Specific: \cdashline {i-j}[size of dash / space between dashes]
+
+\documentclass{article}
+\usepackage{arydshln}
+\begin{document}
+	
+	\begin{tabular}{|c|c|c|r|}
+		\hline
+		No. & Item & Quantity & Price \\
+		\hline
+		1 & Pen & 3 & 10 \\
+		\hline
+		2 & Pencil & 3 & 5 \\
+		\hline
+	\end{tabular}
+
+
+	\begin{tabular}{|c|l|l|r|}
+		\hline
+		No. & Item & Quantity & Price \\
+		\hline
+		1 & Pen & 3 & 10 \\
+		\cline{1-2} \cline{4-4}
+		2 & Pencil &  & 5 \\
+		\hline
+	\end{tabular}
+
+	\begin{tabular}{:c:l:l:r:}
+		\hdashline[3pt/5pt]
+		No. & Item & Quantity & Price \\
+		\hdashline[3pt/5pt]
+		1 & Pen & 3 & 10 \\
+		\cdashline{1-2}[3pt/5pt] \cdashline{4-4}[3pt/5pt]
+		2 & Pencil &  & 5 \\
+		\hdashline[3pt/5pt]
+	\end{tabular}
+
+\end{document}
