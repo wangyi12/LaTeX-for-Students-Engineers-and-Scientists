@@ -1,0 +1,24 @@
+%Scale, crop, and rotate images
+
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+\definecolor{MyDarkBlue}{rgb}{0,0.08,0.45}
+\pagecolor{green}
+\begin{document}
+    \color{MyDarkBlue}
+    \section{Original Image}
+    \includegraphics{images/parrot.png}
+    
+    \section{Rotated Image}
+    parrot
+    \includegraphics[angle=180]{images/parrot.png}
+   
+    \section{Cropped Image} 
+    \includegraphics[clip=true, trim=1mm 1mm 1mm 1mm]{images/parrot.png}
+
+    \section{Scaled Image}
+    \includegraphics[scale=2]{images/parrot.png}
+
+\end{document}

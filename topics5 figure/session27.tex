@@ -1,0 +1,21 @@
+%• Add border to image
+%• Customize borders
+\documentclass{article}
+\usepackage{graphicx}
+\begin{document}
+
+    \setlength{\fboxsep}{15pt}
+	
+    \section{Original Image}
+    \fbox{\includegraphics{images/parrot.png}}
+    
+    \setlength{\fboxrule}{4pt}
+    \section{Rotated Image}
+    \fbox{\includegraphics[angle=180]{images/parrot.png}}
+   
+    \section{Cropped Image}
+    \fbox{\includegraphics[clip=true, trim=3mm 1mm 1mm 1mm]{images/parrot.png}}
+    \section{Scaled Image}
+    \includegraphics[scale=2]{images/parrot.png}
+	
+\end{document}
